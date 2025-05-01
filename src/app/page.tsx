@@ -141,7 +141,7 @@ export default function Home() {
                 </div>
               )}
 
-              {exifData !== undefined && <ExifDataDisplay exifData={exifData} />}
+              {exifData !== undefined && !formState.isLoading && <ExifDataDisplay exifData={exifData} />}
 
               {cleanedImageUrl && <CleanedImageDownload cleanedImageUrl={cleanedImageUrl} />}
 
